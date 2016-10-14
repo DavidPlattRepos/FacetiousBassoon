@@ -69,6 +69,7 @@ class NewChallengeContainer extends Component {
     .then(function(res) {
       context.handleSuccessNotification();
       console.log('posted a challenge', res);
+      browserHistory.goBack();
     })
     .catch(function(err) {
       context.handleFailureNotification();

@@ -11,20 +11,16 @@ class Home extends Component {
   }  
 
   componentDidMount() {
-    var context=this;
+    var context = this;
   }
 
   render() {
-    return(
-      <Paper className={styles.homePage} zDepth={1}>
-        <h1 style={{'fontSize':'70px', 'color': 'white', 'position':'absolute', 'left':'25%', top: '32%'}}>Welcome to FitCoin</h1>
-        <img className={styles.icon1} src='http://res.cloudinary.com/dijpyi6ze/image/upload/v1476422065/smartwatch_oavbv0.svg'/>
-        <p1 style={{'color': 'white', 'fontSize':'40px', 'position':'relative', 'top': '75%', 'left':'15%'}}> Sign up</p1>
-        <img className={styles.icon2} src='http://res.cloudinary.com/dijpyi6ze/image/upload/v1476422710/team_s1rezr.svg'/>
-        <p1 style={{'color': 'white', 'fontSize':'40px', 'position':'relative', 'top': '75%', 'left':'26%'}}> Join Challenge</p1>
-        <img className={styles.icon3} src='http://res.cloudinary.com/dijpyi6ze/image/upload/v1476422618/money_ogtxym.svg'/>
-        <p1 style={{'color': 'white', 'fontSize':'40px', 'position':'relative', 'top': '75%', 'left':'35%'}}> Win Money</p1>
-      </Paper>
+    return (
+      <div>
+        <Paper className={styles.homePage} zDepth={1}>
+          <h1 style={{'fontSize': '100px', 'color': 'white', textAlign: 'center', marginTop: '20%'}}>Welcome to FitCoin</h1>
+        </Paper>
+      </div>
     );
   }
 }

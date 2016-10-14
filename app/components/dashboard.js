@@ -75,18 +75,13 @@ const style = {
     marginRight: 20,
     marginLeft: 20
   },
-
   button: {
     marginRight: 20
   },
-
-  notifications: {
-
-  },
-
   createChallenge: {
-    width: 120,
-    margin: '0px 0px 30px 1115px',
+    width: '10%',
+    marginLeft: '45%',
+    marginBottom: '2%',
     color: white
   },
 };
@@ -169,7 +164,6 @@ class Dashboard extends Component {
       />
     ];
 
-
     return (
       <div>
 
@@ -198,7 +192,7 @@ class Dashboard extends Component {
 
             <div>
               <FlatButton
-              style={{color: cyan700}}
+              style={{color: white}}
               label="Info"
               onTouchTap={this.handleTouchTap}
               />
@@ -240,6 +234,7 @@ class Dashboard extends Component {
 
       </div>
     );
+    
   }
 }
 

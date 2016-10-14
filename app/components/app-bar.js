@@ -39,6 +39,10 @@ const muiTheme = getMuiTheme({
   },
   appBar: {
     height: 90,
+    position: 'fixed',
+    left: 0,
+    top: 0,
+    width: '100%',
     color: grey300,
     textColor: cyan700,
     // textColor: darkBlack,
@@ -136,8 +140,8 @@ class AppBar2 extends Component {
         <MuiThemeProvider muiTheme={muiTheme}>
           <AppBar
 
-            style={{backgroundImage: 'url(http://completebody.com.au/images/Result-Banner.jpg)'}}
-            title={<img style={{maxHeight:'80%', width: 'auto'}} src='http://res.cloudinary.com/dijpyi6ze/image/upload/v1476300641/Logomakr_0UFVLu_nu9mmm.png' />}
+            style={{backgroundImage: 'url(http://completebody.com.au/images/Result-Banner.jpg)' }}
+            title={<img style={{maxHeight:'80%', width: 'auto'}} src='http://res.cloudinary.com/dijpyi6ze/image/upload/v1476425172/logos_jnseyf.png' />}
             iconElementLeft={ this.props.isLoggedIn ? <IconButton><PopoverMessages/></IconButton> : <span></span> }
             iconStyleLeft={{marginRight: '40px'}}
             iconElementRight={this.props.isLoggedIn ? <div><Avatar style={{marginBottom: '15px'}}src={this.props.avatar150} /><Logged /></div> : <Login />}

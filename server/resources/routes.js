@@ -26,7 +26,7 @@ module.exports = (app, express) => {
   app.get('/auth/fitbit/callback', fitbitAuthenticate);
 
   app.get('/auth/fitbit/success', function(req, res, next) {
-    res.redirect('/');
+    res.redirect('/dashboard');
   });
 
   app.get('/auth/fitbit/failure', function (req, res, next) {
