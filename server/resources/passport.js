@@ -2,7 +2,7 @@ var authKeys = require('./passportAuth.js');
 var passport = require('passport');
 var FitbitStrategy = require('passport-fitbit-oauth2').FitbitOAuth2Strategy;
 
-if (ENV.NODE_ENV === 'prod') {
+if (process.env.NODE_ENV === 'prod') {
   const authObj = {
     clientID: authKeys.dustin.clientId,
     clientSecret: authKeys.dustin.clientSecret,
