@@ -30,7 +30,7 @@ const style = {
     height: '60%',
     width: '60%',
     display: 'block',
-    'marginTop': '25%',
+    'marginTop': '15%',
     'marginLeft': 'auto',
     'marginRight': 'auto'
   },
@@ -60,7 +60,6 @@ class OpenCVContainer extends Component {
   componentDidMount() {
     var context=this;
     context.ListInfo();
-
   }
 
   componentWillUnmount() {  

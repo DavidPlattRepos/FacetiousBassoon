@@ -93,7 +93,6 @@ const Logged = (props) => (
     <MenuItem onClick={()=> { browserHistory.push('/browseChallenges'); }}> Browse Challenges </MenuItem>
     <MenuItem onClick={()=> { browserHistory.push('/dashboard'); }}> Dashboard </MenuItem>
     <MenuItem onClick={()=> { browserHistory.push('/pictureDifferences'); }}> Compare Pictures </MenuItem>
-    <MenuItem onClick={()=> { browserHistory.push('/about'); }}> About Us </MenuItem>
     <MenuItem onClick={()=> { browserHistory.push('/'); }}> Home </MenuItem>
     <MenuItem href='/auth/logout'>Logout</MenuItem>
   </IconMenu>
