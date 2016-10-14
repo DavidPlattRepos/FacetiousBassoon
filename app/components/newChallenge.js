@@ -18,7 +18,6 @@ let style = {
 };
 
 const NewChallenge = (props) => {
-  console.log(props);
   return (
     <div className="flex-items-xs-center">
 
@@ -47,14 +46,14 @@ const NewChallenge = (props) => {
           <div className="form-group">
             <label className="col-md-4 control-label" >Starting Date</label>
             <div className="col-md-4">
-              <input id="startDate" name="startDate" type="datetime-local" className="form-control input-md"/>
+              <input id="startDate" name="startDate" type="datetime-local" className="form-control input-md" min={new Date().toISOString().split('T')[0]}/>
             </div>
           </div>
 
           <div className="form-group">
             <label className="col-md-4 control-label" >End Date</label>
             <div className="col-md-4">
-              <input id="expirationDate" name="expirationDate" type="datetime-local" className="form-control input-md"/>
+              <input id="expirationDate" name="expirationDate" type="datetime-local" className="form-control input-md" min={new Date().toISOString().split('T')[0]}/>
             </div>
           </div>
 

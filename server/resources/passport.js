@@ -2,15 +2,26 @@ var authKeys = require('./passportAuth.js');
 var passport = require('passport');
 var FitbitStrategy = require('passport-fitbit-oauth2').FitbitOAuth2Strategy;
 
+if (ENV.NODE_ENV === 'prod') {
+  const authObj = {
+    clientID: authKeys.dustin.clientId,
+    clientSecret: authKeys.dustin.clientSecret,
+    scope: ['activity', 'heartrate', 'location', 'profile'],
+    callbackURL: authKeys.dustin.callbackURL
+  };
+} else {
+  const authObj = {
+    clientID: authKeys.lex.clientId,
+    clientSecret: authKeys.lex.clientSecret,
+    scope: ['activity', 'heartrate', 'location', 'profile'],
+    callbackURL: authKeys.lex.callbackURL
+  };
+}
+
 //Database methods
 var {User} = require('../database/db-config.js');
 //Passport configuration
-var fitbitStrategy = new FitbitStrategy({
-  clientID: authKeys.lex.clientId,
-  clientSecret: authKeys.lex.clientSecret,
-  scope: ['activity', 'heartrate', 'location', 'profile'],
-  callbackURL: authKeys.lex.callbackURL
-}, function(accessToken, refreshToken, params, profile, done) {
+var fitbitStrategy = new FitbitStrategy(authObj, function(accessToken, refreshToken, params, profile, done) {
 
   User.find( {where: {fbUserId: params.user_id}} )
     .then(function(user) {

@@ -10,7 +10,7 @@ import About from './components/about';
 import DashboardContainer from './containers/dashboard-container';
 import NewChallengeContainer from './containers/new-challenge-container';
 import BrowseContainer from './containers/user-browse-container';
-import OpenCVContainer from './containers/OpenCV-container';
+import OpenCVContainer from './containers/openCV-container';
 // import WidgetListContainer from './components/containers/widget-list-container';
 // import TodoListContainer from './components/containers/todo-list-container';
 // import StaticContainer from './components/containers/static-container';

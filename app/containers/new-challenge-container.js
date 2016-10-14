@@ -52,11 +52,11 @@ class NewChallengeContainer extends Component {
     var userEtherWallet = wallet;
     var goalAmount = $('#goalAmount').val();
     var buyInAmount = $('#buyInAmount').val() * 1000000000000000000;
-    var startDate = moment($('#startDate').val()).valueOf();
-    var expirationDate = moment($('#expirationDate').val()).valueOf();
+    var startDate = moment($('#startDate').val()).toISOString();
+    var expirationDate = moment($('#expirationDate').val()).toISOString();
     var goalType = $('#goalType').val();
 
-    console.log(userEtherWallet);
+    console.log(startDate, expirationDate);
     axios.post('/challenges', {
       'userId': userId,
       'startDate': startDate,
