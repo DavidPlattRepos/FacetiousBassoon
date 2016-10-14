@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import axios from 'axios';
 import { generatePictureList } from '../actions/user-actions';
 import { changeOutline } from '../actions/user-actions';
-import UploadCloud from '../components/UploadCloud';
+import UploadCloud from '../components/uploadCloud';
 import CVResults from '../components/cvResults.js';
 import PictureChoice from '../components/pictureChoice';
 import { eraseOutlines } from '../actions/user-actions';

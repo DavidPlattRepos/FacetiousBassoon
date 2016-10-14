@@ -2,7 +2,7 @@ module.exports = {
   dustin: {
     clientId: '228246',
     clientSecret: '7491889262e92cce0bd1244fbacc14ab',
-    callbackUrl: 'http://127.0.0.1:3000/auth/fitbit/callback'
+    callbackUrl: 'http://multicontainerenv.vmhdisr6m6.us-west-2.elasticbeanstalk.com/auth/fitbit/callback'
   }, 
   lex: {
     clientId: '2282K2',

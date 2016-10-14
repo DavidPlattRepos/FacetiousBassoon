@@ -85,14 +85,13 @@ const Logged = (props) => (
     iconButtonElement={
       <IconButton><MoreVertIcon /></IconButton>
     }
-    iconStyle={{color: darkBlack}}
+    iconStyle={{color: cyan700}}
     targetOrigin={{horizontal: 'right', vertical: 'top'}}
     anchorOrigin={{horizontal: 'right', vertical: 'top'}}
   >
 
     <MenuItem onClick={()=> { browserHistory.push('/browseChallenges'); }}> Browse Challenges </MenuItem>
     <MenuItem onClick={()=> { browserHistory.push('/dashboard'); }}> Dashboard </MenuItem>
-    <MenuItem onClick={()=> { browserHistory.push('/newChallenge'); }}> Create Challenge </MenuItem>
     <MenuItem onClick={()=> { browserHistory.push('/pictureDifferences'); }}> Compare Pictures </MenuItem>
     <MenuItem onClick={()=> { browserHistory.push('/about'); }}> About Us </MenuItem>
     <MenuItem onClick={()=> { browserHistory.push('/'); }}> Home </MenuItem>
