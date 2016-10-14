@@ -3,12 +3,12 @@ body {
 }
 .homePage {
   width:auto;
-  height:800px;
+  height:1000px;
   background-image: url("http://media.bestofmicro.com/M/P/519217/original/fitness_tracker_guide_cover_2.jpg");
   background-position: center bottom;
   background-size: cover;
   border-top: 2px solid #407876;
-  border-bottom: 900px solid
+  border-bottom: 20px solid;
 }
 
 .icon1 {
