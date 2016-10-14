@@ -49,7 +49,6 @@ class UserBrowseContainer extends Component {
     return (
       <Browse user={this.props.user} joinableChallenges={this.props.joinableChallenges}
                    handleJoinChallengeRequest={this.handleJoinChallengeRequest}
-
       />
     );
   }
