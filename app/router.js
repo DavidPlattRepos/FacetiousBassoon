@@ -6,7 +6,6 @@ import MainNavBar from './containers/main-navbar';
 
 // Pages
 import Home from './containers/home';
-import About from './components/about';
 import DashboardContainer from './containers/dashboard-container';
 import NewChallengeContainer from './containers/new-challenge-container';
 import BrowseContainer from './containers/user-browse-container';
@@ -19,7 +18,6 @@ export default (
   <Router history={browserHistory}>
     <Route component={MainNavBar}>
       <Route path='/' component={Home}/>
-      <Route path='/about' component={About}/>
       <Route path='/browseChallenges' component={BrowseContainer}/>
       <Route path='/dashboard' component={DashboardContainer}/>
       <Route path='/pictureDifferences' component={OpenCVContainer}/>

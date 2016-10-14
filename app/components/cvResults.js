@@ -7,7 +7,7 @@ import MenuItem from 'material-ui/MenuItem';
 
 const style = {
   h2: {
-    margin: '20% 0% 5% 0%'
+    margin: '13% 0% 5% 0%'
   },
   result: {
     margin: '0px 50px 5px 0px'

@@ -1,0 +1,33 @@
+.homePage {
+	width:auto;
+	height:600px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2%;
+	background-image: url("http://media.bestofmicro.com/M/P/519217/original/fitness_tracker_guide_cover_2.jpg");
+	background-position: center bottom;
+}
+
+.icon1 {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	top: 64%;
+	left: 19%;
+}
+
+.icon2 {
+	position: absolute;
+	width: 155px;
+	height: 155px;
+	top: 61%;
+	left: 43%;
+}
+
+.icon3 {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	top: 65%;
+	left: 70%;
+}
