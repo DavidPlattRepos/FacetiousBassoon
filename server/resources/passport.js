@@ -3,14 +3,14 @@ var passport = require('passport');
 var FitbitStrategy = require('passport-fitbit-oauth2').FitbitOAuth2Strategy;
 
 if (process.env.NODE_ENV === 'prod') {
-  const authObj = {
+  var authObj = {
     clientID: authKeys.dustin.clientId,
     clientSecret: authKeys.dustin.clientSecret,
     scope: ['activity', 'heartrate', 'location', 'profile'],
     callbackURL: authKeys.dustin.callbackURL
   };
 } else {
-  const authObj = {
+  var authObj = {
     clientID: authKeys.lex.clientId,
     clientSecret: authKeys.lex.clientSecret,
     scope: ['activity', 'heartrate', 'location', 'profile'],
